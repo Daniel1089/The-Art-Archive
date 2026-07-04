@@ -1,0 +1,15 @@
+{
+  "originHash" : "344d7ebd7b7128dd6d7684b7fbc462f0a49c61ec5df57851f8f9ca216e59351c",
+  "pins" : [
+    {
+      "identity" : "dominantcolor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/indragiek/DominantColor.git",
+      "state" : {
+        "revision" : "aadc3d48c1f7f8abc7d03561d42c19188b1d4625",
+        "version" : "0.2.2"
+      }
+    }
+  ],
+  "version" : 3
+}

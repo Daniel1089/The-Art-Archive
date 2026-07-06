@@ -12,7 +12,7 @@ struct CardArt: Identifiable, Codable {
     let id: Int
     var title: String
     var description: String
-    var images: [String]
+    var images: String
     var culture: String
     var periodOfTime: String
     var date: String
@@ -20,6 +20,7 @@ struct CardArt: Identifiable, Codable {
     var dataBy: String
     var medium: String
     var numberObject: String
+    var url: URLComponents
     
     enum codingKeys: String, CodingKey {
         case id
@@ -33,6 +34,7 @@ struct CardArt: Identifiable, Codable {
         case dataBy
         case medium
         case numberObject
+        case url
     }
     
     func loadCardsFromBundle(named fileName: String = "artCards") throws -> [CardArt] {

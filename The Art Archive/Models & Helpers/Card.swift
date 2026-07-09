@@ -20,7 +20,7 @@ struct CardArt: Identifiable, Codable {
     var dataBy: String
     var medium: String
     var numberObject: String
-    var url: URLComponents
+    var url: URL
     
     enum codingKeys: String, CodingKey {
         case id

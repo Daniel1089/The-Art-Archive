@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DominantColor
 
 struct CardStackView: View {
     @State private var cards: [CardArt] = []
@@ -18,15 +19,14 @@ struct CardStackView: View {
             } else if cards.isEmpty {
                 ProgressView("Loading cards…")
             } else {
-                ScrollView {
-                    LazyVStack(spacing: 16) {
+                    ScrollView {
+                        LazyVStack(spacing: 16) {
                         ForEach(cards) { card in
                             CardView(card: card)
                                 .padding(.horizontal)
                                 .frame(height: 220)
                         }
                     }
-                    .padding(.vertical)
                 }
             }
         }
@@ -34,28 +34,21 @@ struct CardStackView: View {
             await loadCards()
         }
     }
-
-    @MainActor
-    private func loadCards() async {
-        do {
-            let loaded = try CardArt(id: 0,
-                                     
-                                     title: "",
-                                     description: "",
-                                     images: [],
-                                     culture: "",
-                                     periodOfTime: "",
-                                     date: "",
-                                     location: "",
-                                     dataBy: "", medium: "", numberObject: "")
-                .loadCardsFromBundle(named: "artCards")
-            self.cards = loaded
-        } catch {
-            self.errorMessage = "Failed to load artCards.json: \(error.localizedDescription)"
+    
+        @MainActor
+        private func loadCards() async {
+            do {
+                let loaded = try CardArt(id: 0, title: "", description: "", images: "", culture: "", periodOfTime: "", date: "", location: "", dataBy: "", medium: "", numberObject: "", url: URL(string: "https://www.apple.com")!)
+                    .loadCardsFromBundle(named: "artCards")
+                self.cards = loaded
+            } catch {
+                self.errorMessage = "Failed to load artCards.json: \(error.localizedDescription)"
+            }
         }
     }
-}
+
 
 #Preview {
     CardStackView()
 }
+

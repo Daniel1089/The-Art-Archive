@@ -22,9 +22,12 @@ struct CardStackView: View {
                     ScrollView {
                         LazyVStack(spacing: 16) {
                         ForEach(cards) { card in
-                            CardView(card: card)
-                                .padding(.horizontal)
-                                .frame(height: 220)
+                                CardView(card: card)
+                            .padding(.horizontal)
+                            .frame(height: 220)
+                            .onTapGesture {
+                                
+                            }
                         }
                     }
                 }

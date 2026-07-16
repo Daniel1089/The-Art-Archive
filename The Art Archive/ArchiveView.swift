@@ -16,21 +16,25 @@ struct ArchiveView: View {
     @State private var isSearchActivated: Bool = false
 
     var body: some View {
-        ScrollView(.vertical){
-            CardStackView()
-        }
-        .safeAreaInset(edge: .top){
-            VStack(spacing: 6){
-                HStack{
-                    Text("Archive")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                    
-                    Spacer()
-                }
-                segmentedBar(items: $itemCategories, selection: $selection)
+        NavigationStack{
+            ScrollView(.vertical){
+                CardStackView()
+                    .safeAreaPadding(.top, 5)
             }
-            .safeAreaPadding(.horizontal, 10)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    VStack(spacing: 6){
+                        HStack{
+                            Text("Archive")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                            Spacer()
+                        }
+                        segmentedBar(items: $itemCategories, selection: $selection)
+                    }
+                    .padding(.top, 20)
+                }
+            }
         }
     }
 }

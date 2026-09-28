@@ -15,7 +15,7 @@ struct segmentedBar: View {
     
     var body: some View {
             ScrollView(.horizontal){
-                HStack(spacing: 20){
+                HStack(spacing: 10){
                     ForEach(items, id: \.self){ item in
                         let isTheItemSelected: Bool = selection == item
                         
@@ -30,7 +30,7 @@ struct segmentedBar: View {
                         .glassEffect(.clear.interactive(), in: .capsule)
                         .buttonStyle(.borderedProminent)
                         .tint(isTheItemSelected ?  (userScheme == .dark ? Color.white : Color.black) : Color.clear)
-                        .foregroundStyle(isTheItemSelected ? (userScheme == .dark ? Color.black : Color.white) : .black)
+                        .foregroundStyle(isTheItemSelected ? (userScheme == .dark ? Color.black : Color.white) : (userScheme == .dark ? Color.white : Color.black))
                     }
                 }
          }

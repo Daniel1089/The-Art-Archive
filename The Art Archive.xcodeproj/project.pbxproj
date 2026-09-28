@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		315118F42FF8176D00E8D36E /* ArtCardsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315118F32FF8176D00E8D36E /* ArtCardsLoader.swift */; };
 		31A96FC12FEFFAE1008AF7D5 /* segmentedBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A96FC02FEFFAD3008AF7D5 /* segmentedBar.swift */; };
 		31A96FC32FEFFCF0008AF7D5 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A96FC22FEFFCF0008AF7D5 /* ArchiveView.swift */; };
-		31AEE2C02FF55D2A00058E6F /* DominantColor in Frameworks */ = {isa = PBXBuildFile; productRef = 31AEE2BF2FF55D2A00058E6F /* DominantColor */; };
-		31AEE2C22FF55D2A00058E6F /* DominantColor_Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 31AEE2C12FF55D2A00058E6F /* DominantColor_Dynamic */; };
 		31C0130A2FE9A3EE00E204FC /* .wakatime-project in Resources */ = {isa = PBXBuildFile; fileRef = 31C013092FE9A3DB00E204FC /* .wakatime-project */; };
 		31C013122FE9A43600E204FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C0130E2FE9A43600E204FC /* ContentView.swift */; };
-		31C2EE81300656E200D3FAAD /* DominantColor_Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 31AEE2C12FF55D2A00058E6F /* DominantColor_Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +19,6 @@
 			dstPath = "";
 			dstSubfolder = Frameworks;
 			files = (
-				31C2EE81300656E200D3FAAD /* DominantColor_Dynamic in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 		};
@@ -31,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* The Art Archive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Art Archive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		315118F32FF8176D00E8D36E /* ArtCardsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCardsLoader.swift; sourceTree = "<group>"; };
 		31A96FC02FEFFAD3008AF7D5 /* segmentedBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segmentedBar.swift; sourceTree = "<group>"; };
 		31A96FC22FEFFCF0008AF7D5 /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
 		31C013092FE9A3DB00E204FC /* .wakatime-project */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".wakatime-project"; sourceTree = "<group>"; };
@@ -50,8 +44,6 @@
 		000000000000000130000000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
-				31AEE2C22FF55D2A00058E6F /* DominantColor_Dynamic in Frameworks */,
-				31AEE2C02FF55D2A00058E6F /* DominantColor in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -63,7 +55,6 @@
 				31C013092FE9A3DB00E204FC /* .wakatime-project */,
 				31C0130F2FE9A43600E204FC /* The Art Archive */,
 				000000000000000000000020 /* Products */,
-				315118F32FF8176D00E8D36E /* ArtCardsLoader.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +95,6 @@
 				318B93692FF1768D00E6A15B /* Models & Helpers */,
 			);
 			name = "The Art Archive";
-			packageProductDependencies = (
-				31AEE2BF2FF55D2A00058E6F /* DominantColor */,
-				31AEE2C12FF55D2A00058E6F /* DominantColor_Dynamic */,
-			);
 			productName = MyApp;
 			productReference = 000000000000000000000120 /* The Art Archive.app */;
 			productType = "com.apple.product-type.application";
@@ -120,7 +107,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2630;
-				LastUpgradeCheck = 2700;
+				LastUpgradeCheck = 2710;
 				TargetAttributes = {
 					000000000000000100000000 = {
 						CreatedOnToolsVersion = 26.3;
@@ -137,7 +124,6 @@
 			mainGroup = 000000000000000000000001;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				31AEE2BE2FF55D2900058E6F /* XCRemoteSwiftPackageReference "DominantColor" */,
 			);
 			preferredProjectObjectVersion = 90;
 			productRefGroup = 000000000000000000000020 /* Products */;
@@ -165,7 +151,6 @@
 				31A96FC12FEFFAE1008AF7D5 /* segmentedBar.swift in Sources */,
 				31A96FC32FEFFCF0008AF7D5 /* ArchiveView.swift in Sources */,
 				31C013122FE9A43600E204FC /* ContentView.swift in Sources */,
-				315118F42FF8176D00E8D36E /* ArtCardsLoader.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -311,6 +296,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U6392B585S;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -354,6 +340,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UX46S8LJSX;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -409,30 +396,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		31AEE2BE2FF55D2900058E6F /* XCRemoteSwiftPackageReference "DominantColor" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/indragiek/DominantColor.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		31AEE2BF2FF55D2A00058E6F /* DominantColor */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 31AEE2BE2FF55D2900058E6F /* XCRemoteSwiftPackageReference "DominantColor" */;
-			productName = DominantColor;
-		};
-		31AEE2C12FF55D2A00058E6F /* DominantColor_Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 31AEE2BE2FF55D2900058E6F /* XCRemoteSwiftPackageReference "DominantColor" */;
-			productName = DominantColor_Dynamic;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 000000000000000000000000 /* Project object */;
 }

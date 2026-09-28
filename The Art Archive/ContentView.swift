@@ -10,15 +10,17 @@ import Playgrounds
 }
 
 struct ContentView: View {
+    @State private var searchText: String = ""
     var body: some View {
         TabView {
             Tab.init("Home", systemImage: "house"){
                 
             }
             Tab.init("Archive", systemImage: "person.crop.artframe"){
-                ArchiveView()
+                CardStackView()
             }
         }
+        .tabBarMinimizeBehavior(.onScrollDown)
     }
 }
 

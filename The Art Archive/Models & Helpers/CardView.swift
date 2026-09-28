@@ -6,42 +6,33 @@
 //
 
 import SwiftUI
-import DominantColor
 
 struct CardView: View {
     let card: CardArt
+    @State private var isInfoRequired: Bool = false
+    
     var body: some View {
-        HStack() {
             VStack(alignment: .leading) {
                 Image(card.images)
                     .resizable()
-                    .scaledToFill()
-                    .frame(width: 180, height: 220)
+                    .scaledToFit()
+                    .frame(maxWidth: 400)
                     .clipped()
+                    .font(.caption)
                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                     .contentShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             }
             .padding(5)
-                    
-            VStack(alignment: .leading) {
-                Text(card.title)
-                    .font(.system(size: 24, weight: .bold, design: .serif))
-                    .foregroundStyle(Color.black)
-                    .shadow(color: Color.black.opacity(0.2), radius: 2, x: 0, y: 1)
-                
-                Spacer()
-                Text(card.culture)
-                    .font(.system(size: 20, weight: .regular, design: .monospaced))
-                
-                Text(card.date)
-                    .font(.system(size: 16, weight: .none, design: .monospaced))
-                    .foregroundStyle(Color.secondary)
-                
-            }
-            .padding(.vertical, 10)
-            Spacer()
+        .onTapGesture {
+            isInfoRequired.toggle()
         }
-        .background(Color.cyan)
+        .sheet(isPresented: $isInfoRequired){
+            infoCardView(card: card)
+                .safeAreaPadding(.top, 20)
+                .safeAreaPadding(.horizontal, 10)
+                .presentationDetents([.medium, .large])
+        }
+        .background(Color(hex: card.mainColor))
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
     }
         }

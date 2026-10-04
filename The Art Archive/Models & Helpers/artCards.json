@@ -3007,7 +3007,6 @@
         "url": "https://www.metmuseum.org/art/collection/search/44842",
         "mainColor": "#72624E",
         "secondaryColor": "#FFF2BD"
-        
     },
     {
         "id": 178,
@@ -4894,7 +4893,7 @@
         "numberObject": "14.40.398",
         "url": "https://www.metmuseum.org/art/collection/search/42222",
         "mainColor": "#295D49",
-        "seocndaryColor": "#E9DE9B"
+        "secondaryColor": "#E9DE9B"
     },
     {
         "id": 289,
@@ -5098,7 +5097,7 @@
         "numberObject": "1988.303",
         "url": "https://www.metmuseum.org/art/collection/search/42705",
         "mainColor": "#968368",
-        "seondaryColor": "#C2B8A4"
+        "secondaryColor": "#C2B8A4"
     },
     {
         "id": 301,

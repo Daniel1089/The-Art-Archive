@@ -23,11 +23,13 @@ struct CardArt: Identifiable, Codable {
     var numberObject: String
     var url: URL
     var mainColor: String
+    var secondaryColor: String
     
     enum codingKeys: String, CodingKey {
         case id
         case title
         case description
+        case artist
         case images
         case culture
         case periodOfTime

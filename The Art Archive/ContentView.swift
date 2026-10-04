@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
             Tab.init("Home", systemImage: "house"){
-                
+               homeView()
             }
             Tab.init("Archive", systemImage: "person.crop.artframe"){
                 CardStackView()

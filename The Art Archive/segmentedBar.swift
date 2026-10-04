@@ -26,7 +26,6 @@ struct segmentedBar: View {
                                 .font(.headline)
                                 .padding(6)
                         })
-                        .buttonBorderShape(.capsule)
                         .glassEffect(.clear.interactive(), in: .capsule)
                         .buttonStyle(.borderedProminent)
                         .tint(isTheItemSelected ?  (userScheme == .dark ? Color.white : Color.black) : Color.clear)

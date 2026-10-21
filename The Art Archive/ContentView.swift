@@ -10,19 +10,29 @@ import Playgrounds
 }
 
 struct ContentView: View {
-    @State private var searchText: String = ""
+    @AppStorage("backgroundColor") var backgroundColor: String = ""
     var body: some View {
-        TabView {
-            Tab.init("Home", systemImage: "house"){
-               homeView()
-            }
-            Tab.init("Archive", systemImage: "person.crop.artframe"){
-                CardStackView()
+        ScrollView(.horizontal){
+            HStack{
+                HStack{
+                    homeView()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .containerRelativeFrame(.horizontal)
+                }
+                .containerRelativeFrame(.horizontal)
+                HStack{
+                    CardStackView()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .containerRelativeFrame(.horizontal)
+                }
+                .containerRelativeFrame(.horizontal)
             }
         }
-        .tabBarMinimizeBehavior(.onScrollDown)
+        .frame(width: .infinity, height: .infinity)
+             .ignoresSafeArea()
+             .scrollTargetBehavior(.paging)
+        }
     }
-}
 
 #Preview {
     ContentView()

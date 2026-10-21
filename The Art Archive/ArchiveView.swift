@@ -9,13 +9,12 @@ import Foundation
 import SwiftUI
 
 struct ArchiveView: View {
+    @AppStorage("backgroundColor") var backgroundColor: String = ""
     var body: some View {
             ScrollView(.vertical){
                 CardStackView()
-                    .safeAreaPadding(.top, 5)
-                    .safeAreaBar(edge: .top){
-                    }
             }
+            .frame(width: .infinity, height: .infinity)
     }
 }
 

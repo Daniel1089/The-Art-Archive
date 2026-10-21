@@ -7,6 +7,19 @@
 
 import SwiftUI
 
+private struct PortraitSearchModifier: ViewModifier {
+    let isPortrait: Bool
+    @Binding var searchText: String
+    func body(content: Content) -> some View {
+        if isPortrait {
+            content
+                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+        } else {
+            content
+        }
+    }
+}
+
 struct CardStackView: View {
     @State private var cards: [CardArt] = []
     @State private var errorMessage: String?
@@ -14,11 +27,13 @@ struct CardStackView: View {
     @State private var searchText: String = ""
     @State private var itemCategories: [String] = ["All", "Roman", "British", "Italian", "French", "Chinese", "American", "Japan", "Greek, Attic"]
     @State private var selection: String = "All"
-    @State private var isCardTouched: Bool = false
     @State private var isPortrait: Bool = false
     @State private var isLandscape: Bool = false
+    @State private var userWidth: CGFloat = CGFloat(integerLiteral: 0)
+    @State private var userHeight: CGFloat = CGFloat(integerLiteral: 0)
     @State private var futureWidth: CGFloat = CGFloat(integerLiteral: 0)
     @State private var futureHeight: CGFloat = CGFloat(integerLiteral: 0)
+    @AppStorage("isCardTouched") var isCardTouched: Bool = false
     
     var filteredCards: [CardArt] {
         cards.filter { card in
@@ -32,7 +47,6 @@ struct CardStackView: View {
         GeometryReader{ proxy in
             let realWidth = proxy.size.width
             let realHeight = proxy.size.height
-            
                 NavigationStack{
                     Group {
                         if let errorMessage {
@@ -50,13 +64,13 @@ struct CardStackView: View {
                                     HStack(alignment: .top){
                                         LazyVStack(){
                                             ForEach(filteredCards.indices.filter({ $0.isMultiple(of: 2)}), id: \.self){ index in
-                                                CardView(card: filteredCards[index], isCardTouched: $isCardTouched)
+                                                CardView(card: filteredCards[index])
                                             }
                                         }
                                         
                                         LazyVStack(){
                                             ForEach(filteredCards.indices.filter({ !$0.isMultiple(of: 2)}), id: \.self){ index in
-                                                CardView(card: filteredCards[index], isCardTouched: $isCardTouched)
+                                                CardView(card: filteredCards[index])
                                             }
                                         }
                                     }
@@ -67,69 +81,59 @@ struct CardStackView: View {
                                         LazyVStack(){
                                             ForEach(filteredCards.indices.filter({
                                                 $0 % 4 == 0}), id: \.self){ index in
-                                                    CardView(card: filteredCards[index], isCardTouched: $isCardTouched)
+                                                    CardView(card: filteredCards[index])
                                                 }
                                         }
                                         
                                         LazyVStack(){
                                             ForEach(filteredCards.indices.filter({ $0 % 4 == 1}), id: \.self){ index in
-                                                CardView(card: filteredCards[index], isCardTouched: $isCardTouched)
+                                                CardView(card: filteredCards[index])
                                             }
                                         }
                                         
                                         LazyVStack(){
                                             ForEach(filteredCards.indices.filter({ $0 % 4 == 2}), id: \.self){ index in
-                                                CardView(card: filteredCards[index], isCardTouched: $isCardTouched)
+                                                CardView(card: filteredCards[index])
                                             }
                                         }
                                         
                                         LazyVStack(){
                                             ForEach(filteredCards.indices.filter({ $0 % 4 == 3}), id: \.self){ index in
-                                                CardView(card: filteredCards[index], isCardTouched: $isCardTouched)
+                                                CardView(card: filteredCards[index])
                                             }
                                         }
                                     }
                                     .safeAreaPadding(.horizontal, 10)
+                                    
                                 }
                             }
                             .scrollIndicators(.hidden)
+                            .scrollBounceBehavior(.basedOnSize)
                         }
                     }
+                    .navigationTitle(isPortrait ? "Archive" : "")
                 }
-                .navigationTitle(realWidth < realHeight ? "Archive" : "")
-                .searchable(text: $searchText, placement: realWidth < realHeight ? .navigationBarDrawer(displayMode: .always) : .toolbar)
-                .searchToolbarBehavior(.minimize)
+                .scrollDismissesKeyboard(.interactively)
                 .task {
                     await loadCards()
                 }
                 .onAppear(){
-                    if realWidth > realHeight && !isCardTouched{
+                    if realWidth > realHeight{
                         isPortrait = false
-                    } else if realWidth < realHeight && !isCardTouched {
+                    } else if realWidth < realHeight{
                         isPortrait = true
                     }
                 }
                 .onChange(of: realWidth){
-                    if realWidth > realHeight && !isCardTouched{
+                    if realWidth > realHeight{
                         isPortrait = false
-                    } else if realWidth < realHeight && !isCardTouched {
+                    } else if realWidth < realHeight{
                         isPortrait = true
-                    } else if isCardTouched {
-                        futureWidth = realWidth
-                        futureHeight = realHeight
                     }
                 }
-                .onChange(of: isCardTouched){
-                    if !isCardTouched{
-                        if futureWidth > futureHeight {
-                            isPortrait = false
-                        } else if futureWidth < futureHeight {
-                            isPortrait = true
-                        }
-                    }
-                }
+                .modifier(PortraitSearchModifier(isPortrait: isPortrait, searchText: $searchText))
         }
-        }
+    }
     
         @MainActor
         private func loadCards() async {

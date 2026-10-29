@@ -1,0 +1,227 @@
+{
+  "fill" : {
+    "automatic-gradient" : "extended-gray:1.00000,1.00000"
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "fill-specializations" : [
+            {
+              "value" : {
+                "solid" : "display-p3:0.99316,0.98145,0.98242,1.00000"
+              }
+            },
+            {
+              "appearance" : "dark",
+              "value" : {
+                "solid" : "display-p3:0.01573,0.00304,0.00304,1.00000"
+              }
+            }
+          ],
+          "image-name" : "Untitled design-9.svg",
+          "name" : "Untitled design-9",
+          "position" : {
+            "scale" : 0.6,
+            "translation-in-points" : [
+              -89.66979266666647,
+              293
+            ]
+          }
+        },
+        {
+          "fill-specializations" : [
+            {
+              "value" : {
+                "solid" : "display-p3:0.99316,0.98145,0.98242,1.00000"
+              }
+            },
+            {
+              "appearance" : "dark",
+              "value" : {
+                "solid" : "display-p3:0.02451,0.00541,0.00417,1.00000"
+              }
+            }
+          ],
+          "image-name" : "Untitled design-9.svg",
+          "name" : "Untitled design-9",
+          "position" : {
+            "scale" : 1.1,
+            "translation-in-points" : [
+              -12.870313333333058,
+              183.67135380000002
+            ]
+          }
+        },
+        {
+          "fill-specializations" : [
+            {
+              "value" : {
+                "solid" : "display-p3:0.52637,0.35547,0.15088,0.83056"
+              }
+            },
+            {
+              "appearance" : "dark",
+              "value" : {
+                "solid" : "display-p3:0.52637,0.35547,0.15088,1.00000"
+              }
+            }
+          ],
+          "image-name" : "Untitled design-4 5.svg",
+          "name" : "Untitled design-4 5",
+          "position" : {
+            "scale" : 1.25,
+            "translation-in-points" : [
+              -25.07174496666653,
+              -12
+            ]
+          }
+        },
+        {
+          "fill-specializations" : [
+            {
+              "value" : {
+                "solid" : "srgb:0.37056,0.37056,0.37056,0.95000"
+              }
+            },
+            {
+              "appearance" : "dark",
+              "value" : {
+                "solid" : "srgb:0.37056,0.37056,0.37056,0.95000"
+              }
+            }
+          ],
+          "image-name" : "Untitled design-8.svg",
+          "name" : "Untitled design-8",
+          "position" : {
+            "scale" : 0.8,
+            "translation-in-points" : [
+              32,
+              -273.4968752
+            ]
+          }
+        },
+        {
+          "fill-specializations" : [
+            {
+              "appearance" : "dark",
+              "value" : {
+                "solid" : "srgb:0.83742,0.83744,0.83743,1.00000"
+              }
+            }
+          ],
+          "image-name" : "Untitled design-7.svg",
+          "name" : "Untitled design-7",
+          "position" : {
+            "scale" : 0.6,
+            "translation-in-points" : [
+              79.63020773333335,
+              -236
+            ]
+          }
+        },
+        {
+          "fill-specializations" : [
+            {
+              "value" : {
+                "solid" : "display-p3:0.42542,0.87329,0.27032,1.00000"
+              }
+            },
+            {
+              "appearance" : "dark",
+              "value" : {
+                "solid" : "display-p3:0.42542,0.87329,0.27032,1.00000"
+              }
+            }
+          ],
+          "image-name" : "Untitled design-2.svg",
+          "name" : "Untitled design-2",
+          "position" : {
+            "scale" : 1.1,
+            "translation-in-points" : [
+              2.408332533333464,
+              -189.4890621333334
+            ]
+          }
+        },
+        {
+          "fill-specializations" : [
+            {
+              "value" : {
+                "solid" : "display-p3:0.03625,0.01154,0.01266,1.00000"
+              }
+            },
+            {
+              "appearance" : "dark",
+              "value" : {
+                "solid" : "display-p3:0.99780,0.99780,0.99780,1.00000"
+              }
+            }
+          ],
+          "image-name" : "Untitled design-2.svg",
+          "name" : "Untitled design-2",
+          "position" : {
+            "scale" : 1.1,
+            "translation-in-points" : [
+              -0.13750000000004547,
+              -22
+            ]
+          }
+        },
+        {
+          "blend-mode" : "normal",
+          "fill-specializations" : [
+            {
+              "value" : {
+                "solid" : "display-p3:0.39970,0.74838,0.87791,1.00000"
+              }
+            },
+            {
+              "appearance" : "dark",
+              "value" : {
+                "solid" : "display-p3:0.11196,0.17435,0.50348,1.00000"
+              }
+            }
+          ],
+          "glass" : true,
+          "image-name" : "Untitled design-3.svg",
+          "name" : "Untitled design-3",
+          "position" : {
+            "scale" : 1.1,
+            "translation-in-points" : [
+              2.408332533333464,
+              -100
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.3
+      }
+    },
+    {
+      "layers" : [
+
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.3
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}

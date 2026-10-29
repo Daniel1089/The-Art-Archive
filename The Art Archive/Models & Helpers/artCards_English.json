@@ -405,7 +405,7 @@
         "numberObject": "20.192.16",
         "url": "https://www.metmuseum.org/art/collection/search/250945",
         "mainColor": "#4D5A53",
-        "secondaryColor": "#7D6558"
+        "secondaryColor": "#5B382C"
     },
     {
         "id": 25,
@@ -660,7 +660,7 @@
         "numberObject": "40.11.1b, c",
         "url": "https://www.metmuseum.org/art/collection/search/253593",
         "mainColor": "#C4C8B8",
-        "secondaryColor": "#CDD1C1"
+        "secondaryColor": "#0C1404"
     },
     {
         "id": 40,
@@ -762,7 +762,7 @@
         "numberObject": "41.160.113",
         "url": "https://www.metmuseum.org/art/collection/search/253639",
         "mainColor": "#5C6A5D",
-        "secondaryColor": "#82745E"
+        "secondaryColor": "#FFFFF8"
     },
     {
         "id": 46,
@@ -813,7 +813,7 @@
         "numberObject": "17.194.1504a–d",
         "url": "https://www.metmuseum.org/art/collection/search/250145",
         "mainColor": "#976E63",
-        "secondaryColor": "#78787A"
+        "secondaryColor": "#2A2D2C"
     },
     {
         "id": 49,
@@ -1000,7 +1000,7 @@
         "numberObject": "26.49",
         "url": "https://www.metmuseum.org/art/collection/search/252451",
         "mainColor": "#996125",
-        "secondaryColor": "#936D34"
+        "secondaryColor": "#301E14"
     },
     {
         "id": 60,
@@ -1408,7 +1408,7 @@
         "numberObject": "2001.563",
         "url": "https://www.metmuseum.org/art/collection/search/256335",
         "mainColor": "#692F24",
-        "secondaryColor": "#7A4731"
+        "secondaryColor": "#C18B65"
     },
     {
         "id": 84,
@@ -1476,7 +1476,7 @@
         "numberObject": "X.21.30",
         "url": "https://www.metmuseum.org/art/collection/search/256610",
         "mainColor": "#A9692F",
-        "secondaryColor": "#A34623"
+        "secondaryColor": "#140F0F"
     },
     {
         "id": 88,
@@ -1629,7 +1629,7 @@
         "numberObject": " X.313.1",
         "url": "https://www.metmuseum.org/art/collection/search/256791",
         "mainColor": "#F19B56",
-        "secondaryColor": "#F0A362"
+        "secondaryColor": "#161513"
     },
     {
         "id": 97,
@@ -1969,7 +1969,7 @@
         "numberObject": "2013.35",
         "url": "https://www.metmuseum.org/art/collection/search/239234",
         "mainColor": "#575353",
-        "secondaryColor": "#544639"
+        "secondaryColor": "#111012"
     },
     {
         "id": 117,
@@ -2139,7 +2139,7 @@
         "numberObject": "1994.295a, b",
         "url": "https://www.metmuseum.org/art/collection/search/208183",
         "mainColor": "#C9C5C1",
-        "secondaryColor": "#D3CFCB"
+        "secondaryColor": "#2C271E"
     },
     {
         "id": 127,
@@ -2394,7 +2394,7 @@
         "numberObject": "64.101.1589",
         "url": "https://www.metmuseum.org/art/collection/search/209153",
         "mainColor": "#BF8F5B",
-        "secondaryColor": "#BA9C70"
+        "secondaryColor": "#854526"
     },
     {
         "id": 142,
@@ -2411,7 +2411,7 @@
         "numberObject": "64.101.1590",
         "url": "https://www.metmuseum.org/art/collection/search/209154",
         "mainColor": "#B78B59",
-        "secondaryColor": "#B6785D"
+        "secondaryColor": "#4A312A"
     },
     {
         "id": 143,
@@ -2462,7 +2462,7 @@
         "numberObject": "25.142.11",
         "url": "https://www.metmuseum.org/art/collection/search/195365",
         "mainColor": "#5E4E3D",
-        "secondaryColor": "#493F39"
+        "secondaryColor": "#201E1B"
     },
     {
         "id": 146,
@@ -2479,7 +2479,7 @@
         "numberObject": "1989.44",
         "url": "https://www.metmuseum.org/art/collection/search/503359",
         "mainColor": "#A1561E",
-        "secondaryColor": "#844A30"
+        "secondaryColor": "#303030"
     },
     {
         "id": 147,
@@ -2785,7 +2785,7 @@
         "numberObject": "JP3359",
         "url": "https://www.metmuseum.org/art/collection/search/55527",
         "mainColor": "#5C5E5F",
-        "secondaryColor": "#7A606B"
+        "secondaryColor": "#C66657"
     },
     {
         "id": 165,
@@ -3108,7 +3108,7 @@
         "numberObject": "1975.268.697",
         "url": "https://www.metmuseum.org/art/collection/search/52317",
         "mainColor": "#4C6242",
-        "secondaryColor": "#93452A"
+        "secondaryColor": "#C7B190"
     },
     {
         "id": 184,
@@ -3295,7 +3295,7 @@
         "numberObject": "66.155.3",
         "url": "https://www.metmuseum.org/art/collection/search/63530",
         "mainColor": "#A8B4C1",
-        "secondaryColor": "#BFC4B7"
+        "secondaryColor": "#4F5D75"
     },
     {
         "id": 195,
@@ -3363,7 +3363,7 @@
         "numberObject": "19.93.50",
         "url": "https://www.metmuseum.org/art/collection/search/65086",
         "mainColor": "#4C382A",
-        "secondaryColor": "#2D323B"
+        "secondaryColor": "#88533B"
     },
     {
         "id": 199,
@@ -3414,7 +3414,7 @@
         "numberObject": "1980.224",
         "url": "https://www.metmuseum.org/art/collection/search/10065",
         "mainColor": "#704730",
-        "secondaryColor": "#554B45"
+        "secondaryColor": "#C0BD9F"
     },
     {
         "id": 202,
@@ -3499,7 +3499,7 @@
         "numberObject": "09.95",
         "url": "https://www.metmuseum.org/art/collection/search/10481",
         "mainColor": "#665A29",
-        "secondaryColor": "#6E5944"
+        "secondaryColor": "#E3DECE"
     },
     {
         "id": 207,
@@ -3550,7 +3550,7 @@
         "numberObject": "34.92",
         "url": "https://www.metmuseum.org/art/collection/search/10819",
         "mainColor": "#515A62",
-        "secondaryColor": "#7B6140"
+        "secondaryColor": "#98803D"
     },
     {
         "id": 210,
@@ -3601,7 +3601,7 @@
         "numberObject": "63.85",
         "url": "https://www.metmuseum.org/art/collection/search/10997",
         "mainColor": "#806E4A",
-        "secondaryColor": "#835528"
+        "secondaryColor": "#533C27"
     },
     {
         "id": 213,
@@ -3635,7 +3635,7 @@
         "numberObject": "06.1234",
         "url": "https://www.metmuseum.org/art/collection/search/11122",
         "mainColor": "#364B49",
-        "secondaryColor": "#704A32"
+        "secondaryColor": "#8E7F66"
     },
     {
         "id": 215,
@@ -3686,7 +3686,7 @@
         "numberObject": "97.34",
         "url": "https://www.metmuseum.org/art/collection/search/11417",
         "mainColor": "#34342B",
-        "secondaryColor": "#2D2724"
+        "secondaryColor": "#60322E"
     },
     {
         "id": 218,
@@ -4009,7 +4009,7 @@
         "numberObject": "15.21.2",
         "url": "https://www.metmuseum.org/art/collection/search/3141",
         "mainColor": "#A2562D",
-        "secondaryColor": "#B4A472"
+        "secondaryColor": "#2B140D"
     },
     {
         "id": 237,
@@ -4026,7 +4026,7 @@
         "numberObject": "69.203",
         "url": "https://www.metmuseum.org/art/collection/search/3152",
         "mainColor": "#BA5F24",
-        "secondaryColor": "#948059"
+        "secondaryColor": "#4D1E1B"
     },
     {
         "id": 238,
@@ -4145,7 +4145,7 @@
         "numberObject": "30.50",
         "url": "https://www.metmuseum.org/art/collection/search/5582",
         "mainColor": "#26518F",
-        "secondaryColor": "#53611B"
+        "secondaryColor": "#4C983B"
     },
     {
         "id": 245,
@@ -4332,7 +4332,7 @@
         "numberObject": "14.40.377",
         "url": "https://www.metmuseum.org/art/collection/search/42229",
         "mainColor": "#8E524D",
-        "secondaryColor": "#6B7077"
+        "secondaryColor": "#F8DEE7"
     },
     {
         "id": 256,
@@ -4638,7 +4638,7 @@
         "numberObject": "91.1.410",
         "url": "https://www.metmuseum.org/art/collection/search/40085",
         "mainColor": "#A8A66A",
-        "secondaryColor": "#C9A084"
+        "secondaryColor": "#864029"
     },
     {
         "id": 274,
@@ -4927,7 +4927,7 @@
         "numberObject": "17.120.194",
         "url": "https://www.metmuseum.org/art/collection/search/42317",
         "mainColor": "#936478",
-        "secondaryColor": "#42907F"
+        "secondaryColor": "#335E50"
     },
     {
         "id": 291,
@@ -4995,7 +4995,7 @@
         "numberObject": "1991.253.11",
         "url": "https://www.metmuseum.org/art/collection/search/42383",
         "mainColor": "#DAA03A",
-        "secondaryColor": "#9F9B60"
+        "secondaryColor": "#633719"
     },
     {
         "id": 295,
@@ -5080,7 +5080,7 @@
         "numberObject": "63.224.1",
         "url": "https://www.metmuseum.org/art/collection/search/42554",
         "mainColor": "#7F8385",
-        "secondaryColor": "#7F7965"
+        "secondaryColor": "#D5D7E2"
     },
     {
         "id": 300,
@@ -5114,7 +5114,7 @@
         "numberObject": "12.11.1",
         "url": "https://www.metmuseum.org/art/collection/search/191843",
         "mainColor": "#D0AE83",
-        "secondaryColor": "#D2AF83"
+        "secondaryColor": "#372615"
     },
     {
         "id": 302,
@@ -5182,7 +5182,7 @@
         "numberObject": "17.190.199",
         "url": "https://www.metmuseum.org/art/collection/search/464156",
         "mainColor": "#D2BB9D",
-        "secondaryColor": "#A5A8AA"
+        "secondaryColor": "#5F3127"
     },
     {
         "id": 306,
@@ -5199,7 +5199,7 @@
         "numberObject": "17.190.352a, b",
         "url": "https://www.metmuseum.org/art/collection/search/464333",
         "mainColor": "#989A96",
-        "secondaryColor": "#95885B"
+        "secondaryColor": "#2E1E1E"
     },
     {
         "id": 307,
@@ -5250,7 +5250,7 @@
         "numberObject": "17.190.735",
         "url": "https://www.metmuseum.org/art/collection/search/464604",
         "mainColor": "#41474F",
-        "secondaryColor": "#575A44"
+        "secondaryColor": "#FFF7D9"
     },
     {
         "id": 310,
@@ -5318,7 +5318,7 @@
         "numberObject": "1980.263.4",
         "url": "https://www.metmuseum.org/art/collection/search/469857",
         "mainColor": "#F1C14B",
-        "secondaryColor": "#94C49C"
+        "secondaryColor": "#310203"
     },
     {
         "id": 314,
@@ -5335,7 +5335,7 @@
         "numberObject": "54.1.1a, b",
         "url": "https://www.metmuseum.org/art/collection/search/470306",
         "mainColor": "#6181B9",
-        "secondaryColor": "#7B6F5E"
+        "secondaryColor": "#5F3129"
     },
     {
         "id": 315,
@@ -5386,7 +5386,7 @@
         "numberObject": "47.101.15",
         "url": "https://www.metmuseum.org/art/collection/search/470311",
         "mainColor": "#4D4B4C",
-        "secondaryColor": "#524E2F"
+        "secondaryColor": "#C9AC9C"
     },
     {
         "id": 318,
@@ -5998,7 +5998,7 @@
         "numberObject": "18.70.28",
         "url": "https://www.metmuseum.org/art/collection/search/465937",
         "mainColor": "#BEA986",
-        "secondaryColor": "#A1A2A6"
+        "secondaryColor": "#5A5246"
     },
     {
         "id": 354,
@@ -6185,7 +6185,7 @@
         "numberObject": "1975.1.2405",
         "url": "https://www.metmuseum.org/art/collection/search/460314",
         "mainColor": "#5E2B1F",
-        "secondaryColor": "#2D383D"
+        "secondaryColor": "#C9C7BB"
     },
     {
         "id": 365,
@@ -6202,7 +6202,7 @@
         "numberObject": "1975.1.1167",
         "url": "https://www.metmuseum.org/art/collection/search/460738",
         "mainColor": "#69A8EC",
-        "secondaryColor": "#B28666"
+        "secondaryColor": "#411620"
     },
     {
         "id": 366,
@@ -6508,7 +6508,7 @@
         "numberObject": "2016.488",
         "url": "https://www.metmuseum.org/art/collection/search/701565",
         "mainColor": "#B29875",
-        "secondaryColor": "#9D9D9D"
+        "secondaryColor": "#F0EBED"
     },
     {
         "id": 384,

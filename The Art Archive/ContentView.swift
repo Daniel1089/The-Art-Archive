@@ -10,30 +10,25 @@ import Playgrounds
 }
 
 struct ContentView: View {
+    @Environment(\.horizontalSizeClass) var sizeClass
     @AppStorage("backgroundColor") var backgroundColor: String = ""
     var body: some View {
-        ScrollView(.horizontal){
-            HStack{
-                HStack{
-                    homeView()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .containerRelativeFrame(.horizontal)
-                }
-                .containerRelativeFrame(.horizontal)
-                HStack{
+        TabView{
+            Tab("Artwork of the day", systemImage: "photo.artframe") {
+                homeView()
+            }
+            
+            Tab("Archive", systemImage: "text.below.folder"){
+                NavigationStack{
                     CardStackView()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .containerRelativeFrame(.horizontal)
                 }
-                .containerRelativeFrame(.horizontal)
             }
         }
-        .frame(width: .infinity, height: .infinity)
-             .ignoresSafeArea()
-             .scrollTargetBehavior(.paging)
-        }
+        .ignoresSafeArea(.container, edges: .bottom)
+        .tabViewStyle(.automatic)
+        .tabBarMinimizeBehavior(.onScrollDown)
     }
-
-#Preview {
-    ContentView()
 }
+    #Preview {
+        ContentView()
+    }

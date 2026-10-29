@@ -47,7 +47,6 @@ struct CardStackView: View {
         GeometryReader{ proxy in
             let realWidth = proxy.size.width
             let realHeight = proxy.size.height
-                NavigationStack{
                     Group {
                         if let errorMessage {
                             Text(errorMessage).foregroundStyle(.red)
@@ -112,8 +111,6 @@ struct CardStackView: View {
                         }
                     }
                     .navigationTitle(isPortrait ? "Archive" : "")
-                }
-                .scrollDismissesKeyboard(.interactively)
                 .task {
                     await loadCards()
                 }

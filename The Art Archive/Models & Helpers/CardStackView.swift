@@ -136,7 +136,7 @@ struct CardStackView: View {
         private func loadCards() async {
             do {
                 let loaded = try CardArt(id: 0, title: "", description: "", artist: "", images: "", culture: "", periodOfTime: "", date: "", location: "", dataBy: "", medium: "", numberObject: "", url: URL(string: "https://www.apple.com")!, mainColor: "", secondaryColor: "")
-                    .loadCardsFromBundle(named: "artCards")
+                    .loadCardsFromBundle(named: "artCards_English")
                 self.cards = loaded
             } catch {
                 self.errorMessage = "Failed to load artCards.json: \(error.localizedDescription)"

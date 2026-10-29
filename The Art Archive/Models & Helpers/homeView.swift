@@ -136,7 +136,7 @@ struct homeView: View {
     private func loadAllArtworks() -> [CardArt] {
         do {
             let loader = CardArt(id: 0, title: "", description: "", artist: "", images: "", culture: "", periodOfTime: "", date: "", location: "", dataBy: "", medium: "", numberObject: "", url: URL(string: "https://apple.com")!, mainColor: "#B2936B", secondaryColor: "#604125")
-            let items = try loader.loadCardsFromBundle(named: "artCards")
+            let items = try loader.loadCardsFromBundle(named: "artCards_English")
             return items
         } catch {
             return []

@@ -43,7 +43,7 @@ struct CardArt: Identifiable, Codable {
         case secondaryColor
     }
     
-    func loadCardsFromBundle(named fileName: String = "artCards") throws -> [CardArt] {
+    func loadCardsFromBundle(named fileName: String = "artCards_English") throws -> [CardArt] {
         guard let url = Bundle.main.url(forResource: fileName, withExtension: "json")
         else {
             throw NSError(domain: "JSON", code: 1, userInfo: [NSLocalizedDescriptionKey: "Missing \(fileName).json in bundle"])
